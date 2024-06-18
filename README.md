@@ -40,16 +40,16 @@ Take note of the Resource Group and Virtual Network (Vnet) that get created at t
 <br />
 
 <p>
-<img src="https://i.imgur.com/pEatsVd.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/pEatsVd.png" height="80%" width="80%" alt="Set Domain Controller NIC"/>
 </p>
 <p>Set Domain Controller’s NIC Private IP address to be static
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/7TpPWSI.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/w2DaBHa.png" height="80%" width="80%" alt="Diagram"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Create the Client VM (Windows 10) named “Client-1”. Use the same Resource Group and Vnet that was created in Step 1.a  
 </p>
 <br />
