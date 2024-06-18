@@ -66,3 +66,12 @@ Login to Client-1 with Remote Desktop and ping DC-1’s private IP address with 
 <br />
 Login to the Domain Controller and enable ICMPv4 in on the local windows Firewall
 Check back at Client-1 to see the ping succeed
+</p>
+<br />
+
+<img src="https://i.imgur.com/8OU2aab.png" height="80%" width="80%" alt="Install AD Domain Services"/>
+Install Active Directory
+Login to DC-1 and install Active Directory Domain Services
+
+<img src="https://i.imgur.com/1qwARCs.png" height="80%" width="80%" alt="Install AD Domain Services"/>
+Configure domain controller
