@@ -51,6 +51,10 @@ Take note of the Resource Group and Virtual Network (Vnet) that get created at t
 <img src="https://i.imgur.com/w2DaBHa.png" height="80%" width="80%" alt="Diagram"/>
 </p>
 <p>
-Create the Client VM (Windows 10) named “Client-1”. Use the same Resource Group and Vnet that was created in Step 1.a  
+Create the Client VM (Windows 10) named “Client-1”. Use the same Resource Group and Vnet that was created in Step 1.a 
+Ensure that both VMs are in the same Vnet (you can check the topology with Network Watcher
 </p>
 <br />
+<img src="https://i.imgur.com/JRwMqHb.png" height="80%" width="80%" alt="Diagram"/>
+Ensure Connectivity between the client and Domain Controller
+Login to Client-1 with Remote Desktop and ping DC-1’s private IP address with ping -t <ip address> (perpetual ping)
