@@ -73,5 +73,5 @@ Check back at Client-1 to see the ping succeed
 Install Active Directory
 Login to DC-1 and install Active Directory Domain Services
 
-<img src="https://i.imgur.com/1qwARCs.png" height="80%" width="80%" alt="Install AD Domain Services"/>
+<img src="https://i.imgur.com/Bzf7MHy.png" height="80%" width="80%" alt="Configure Domain Controller"/>
 Configure domain controller
