@@ -75,3 +75,4 @@ Login to DC-1 and install Active Directory Domain Services
 
 <img src="https://i.imgur.com/Bzf7MHy.png" height="80%" width="80%" alt="Configure Domain Controller"/>
 Configure domain controller
+Promote as a DC: Setup a new forest as mydomain.com (can be anything, just remember what it is)
