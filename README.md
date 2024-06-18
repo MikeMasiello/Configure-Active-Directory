@@ -72,7 +72,14 @@ Check back at Client-1 to see the ping succeed
 <img src="https://i.imgur.com/8OU2aab.png" height="80%" width="80%" alt="Install AD Domain Services"/>
 Install Active Directory
 Login to DC-1 and install Active Directory Domain Services
-
+</p>
+<br />
 <img src="https://i.imgur.com/Bzf7MHy.png" height="80%" width="80%" alt="Configure Domain Controller"/>
 Configure domain controller
 Promote as a DC: Setup a new forest as mydomain.com (can be anything, just remember what it is)
+Restart and then log back into DC-1 as user: mydomain.com\labuser (important to use the fully qualified domain name)
+
+
+Create an Admin and Normal User Account in AD
+In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”
+
