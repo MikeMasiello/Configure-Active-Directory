@@ -55,6 +55,14 @@ Create the Client VM (Windows 10) named “Client-1”. Use the same Resource Gr
 Ensure that both VMs are in the same Vnet (you can check the topology with Network Watcher
 </p>
 <br />
-<img src="https://i.imgur.com/JRwMqHb.png" height="80%" width="80%" alt="Diagram"/>
+<img src="https://i.imgur.com/JRwMqHb.png" height="80%" width="80%" alt="Ping Domain Controller"/>
 Ensure Connectivity between the client and Domain Controller
 Login to Client-1 with Remote Desktop and ping DC-1’s private IP address with ping -t <ip address> (perpetual ping)
+</p>
+<br />
+
+<img src="https://i.imgur.com/4tanhzu.png" height="80%" width="80%" alt="Enable ICMPv4"/>
+</p>
+<br />
+Login to the Domain Controller and enable ICMPv4 in on the local windows Firewall
+Check back at Client-1 to see the ping succeed
