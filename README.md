@@ -45,6 +45,7 @@ Take note of the Resource Group and Virtual Network (Vnet) that get created at t
 <p>Set Domain Controller’s NIC Private IP address to be static
 </p>
 <br />
+<img src="https://i.imgur.com/XUhBNe0.png" height="80%" width="80%" alt="Set Domain Controller NIC"/>
 
 <p>
 <img src="https://i.imgur.com/w2DaBHa.png" height="80%" width="80%" alt="Diagram"/>
