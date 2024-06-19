@@ -86,4 +86,9 @@ In Active Directory Users and Computers (ADUC), create an Organizational Unit (O
 </p> 
 <img src="https://i.imgur.com/bKrpaFQ.png" height="80%" width="80%" alt="Create User"/>
 Create user, Jane_Admin
+</p> 
+<img src="https://i.imgur.com/IET78Do.png" height="80%" width="80%" alt="Add User to Group"/>
+Add user Jane_Admin to ADIMINS user group
+
+  
 Login to DC-1 as jane_admin
