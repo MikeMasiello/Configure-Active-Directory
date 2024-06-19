@@ -101,8 +101,10 @@ From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP ad
 From the Azure Portal, restart Client-1
 Login to Client-1 (Remote Desktop) as the original local admin (labuser) and join it to the domain (computer will restart)
  </p> 
-<img src="https://i.imgur.com/XiO7kXc.png" height="80%" width="80%" alt="Set Client DNS to private IP"/>
+<img src="https://i.imgur.com/XiO7kXc.png" height="80%" width="80%" alt="join Client-1 to domain"/>
  </p> 
 From the Azure Portal, restart Client-1
 Login to Client-1 (Remote Desktop) as the original local admin (labuser) and join it to the domain (computer will restart)
-
+<img src="https://i.imgur.com/p5723Ei.png" height="80%" width="80%" alt="Enable domain users to use RDP"/>
+ </p> 
+Enable domain users to use remote desktop
