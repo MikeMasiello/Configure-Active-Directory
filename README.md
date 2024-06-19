@@ -112,11 +112,15 @@ Enable domain users to use remote desktop
 <img src="https://i.imgur.com/Hz3rpDj.png" height="80%" width="80%" alt="Verify Client-1 shows up in AD Users and Computers"/>
 Login to the Domain Controller (Remote Desktop) and verify Client-1 shows up in Active Directory Users and Computers (ADUC) inside the “Computers” container on the root of the domain
  </p> 
-<img src="https://i.imgur.com/6UKEUYG.png" height="80%" width="80%" alt="Verify Client-1 shows up in AD Users and Computers"/>
+<img src="https://i.imgur.com/6UKEUYG.png" height="80%" width="80%" alt="Create additional users"/>
 </p> 
 Create a bunch of additional users and attempt to log into client-1 with one of the users
 Login to DC-1 as jane_admin
 Open PowerShell_ise as an administrator
 Create a new File and paste the contents of the script into it (https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1)
+<img src="https://i.imgur.com/z19cEag.png" height="80%" width="80%" alt="Observe additional users"/>
+</p> 
 Run the script and observe the accounts being created
-
+<img src="https://i.imgur.com/bvXvtLq.png" height="80%" width="80%" alt="log into client-1 with new user created"/>
+</p> 
+Log into Client-1 with one of the accounts (take note of the password in the script)
