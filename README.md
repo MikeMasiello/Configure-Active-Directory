@@ -89,6 +89,11 @@ Create user, Jane_Admin
 </p> 
 <img src="https://i.imgur.com/IET78Do.png" height="80%" width="80%" alt="Add User to Group"/>
 Add user Jane_Admin to ADIMINS user group
-
-  
+</p>
 Login to DC-1 as jane_admin
+  </p>
+<img src="https://i.imgur.com/LgaoPEM.png" height="80%" width="80%" alt="Add User to Group"/>
+Join Client-1 to your domain (mydomain.com)
+
+
+From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address
