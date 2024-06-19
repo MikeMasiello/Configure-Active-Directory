@@ -94,9 +94,15 @@ Login to DC-1 as jane_admin
   </p>
 <img src="https://i.imgur.com/LgaoPEM.png" height="80%" width="80%" alt="Join Client-1 to domain"/>
 Join Client-1 to your domain (mydomain.com)
-<img src="https://i.imgur.com/4RAwMbg.png" height="80%" width="80%" alt="Join Client-1 to domain"/>
+<img src="https://i.imgur.com/4RAwMbg.png" height="80%" width="80%" alt="Set Client DNS to private IP"/>
  </p>
 From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address
 </p>
 From the Azure Portal, restart Client-1
 Login to Client-1 (Remote Desktop) as the original local admin (labuser) and join it to the domain (computer will restart)
+ </p> 
+<img src="https://i.imgur.com/XiO7kXc.png" height="80%" width="80%" alt="Set Client DNS to private IP"/>
+ </p> 
+From the Azure Portal, restart Client-1
+Login to Client-1 (Remote Desktop) as the original local admin (labuser) and join it to the domain (computer will restart)
+
