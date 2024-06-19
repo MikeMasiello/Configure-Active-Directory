@@ -108,3 +108,6 @@ Login to Client-1 (Remote Desktop) as the original local admin (labuser) and joi
 <img src="https://i.imgur.com/p5723Ei.png" height="80%" width="80%" alt="Enable domain users to use RDP"/>
  </p> 
 Enable domain users to use remote desktop
+ </p> 
+<img src="https://i.imgur.com/Hz3rpDj.png" height="80%" width="80%" alt="Verify Client-1 shows up in AD Users and Computers"/>
+Login to the Domain Controller (Remote Desktop) and verify Client-1 shows up in Active Directory Users and Computers (ADUC) inside the “Computers” container on the root of the domain
