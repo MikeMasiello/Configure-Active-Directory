@@ -79,7 +79,7 @@ Configure domain controller
 Promote as a DC: Setup a new forest as mydomain.com (can be anything, just remember what it is)
 Restart and then log back into DC-1 as user: mydomain.com\labuser (important to use the fully qualified domain name)
 
-
+<img src="https://i.imgur.com/qVemn3m.png" height="80%" width="80%" alt="Create an Admin and User Account in AD"/>
 Create an Admin and Normal User Account in AD
 In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”
 
