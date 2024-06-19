@@ -23,9 +23,12 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>High-Level Deployment and Configuration Steps</h2>
 
 - Step 1 Setup Resources in Azure
-- Step 2
-- Step 3
-- Step 4
+- Step 2 Ensure Connectivity between the client and Domain Controller
+- Step 3 Install Active Directory
+- Step 4 Create an Admin and Normal User Account in AD
+- Step 5 Join Client-1 to your domain (mydomain.com)
+- Step 6 Setup Remote Desktop for non-administrative users on Client-1
+- Step 7 Create a bunch of additional users and attempt to log into client-1 with one of the users
 
 <h2>Deployment and Configuration Steps</h2>
 
@@ -35,10 +38,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p>
 Create the Domain Controller VM (Windows Server 2022) named “DC-1”
 Take note of the Resource Group and Virtual Network (Vnet) that get created at this time
-
 </p>
 <br />
-
 <p>
 <img src="https://i.imgur.com/pEatsVd.png" height="80%" width="80%" alt="Set Domain Controller NIC"/>
 </p>
@@ -46,7 +47,6 @@ Take note of the Resource Group and Virtual Network (Vnet) that get created at t
 </p>
 <br />
 <img src="https://i.imgur.com/XUhBNe0.png" height="80%" width="80%" alt="Set Domain Controller NIC"/>
-
 <p>
 <img src="https://i.imgur.com/w2DaBHa.png" height="80%" width="80%" alt="Diagram"/>
 </p>
@@ -60,7 +60,6 @@ Ensure Connectivity between the client and Domain Controller
 Login to Client-1 with Remote Desktop and ping DC-1’s private IP address with ping -t <ip address> (perpetual ping)
 </p>
 <br />
-
 <img src="https://i.imgur.com/4tanhzu.png" height="80%" width="80%" alt="Enable ICMPv4"/>
 </p>
 <br />
@@ -68,7 +67,6 @@ Login to the Domain Controller and enable ICMPv4 in on the local windows Firewal
 Check back at Client-1 to see the ping succeed
 </p>
 <br />
-
 <img src="https://i.imgur.com/8OU2aab.png" height="80%" width="80%" alt="Install AD Domain Services"/>
 Install Active Directory
 Login to DC-1 and install Active Directory Domain Services
@@ -78,8 +76,12 @@ Login to DC-1 and install Active Directory Domain Services
 Configure domain controller
 Promote as a DC: Setup a new forest as mydomain.com (can be anything, just remember what it is)
 Restart and then log back into DC-1 as user: mydomain.com\labuser (important to use the fully qualified domain name)
-
+</p>
+<br />
 <img src="https://i.imgur.com/qVemn3m.png" height="80%" width="80%" alt="Create an Admin and User Account in AD"/>
+<img src="https://i.imgur.com/faUm5ZC.png" height="80%" width="80%" alt="Create organizational unit"/>
+</p>
+<br />
 Create an Admin and Normal User Account in AD
 In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”
 
