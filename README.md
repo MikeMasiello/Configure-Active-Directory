@@ -83,4 +83,7 @@ Restart and then log back into DC-1 as user: mydomain.com\labuser (important to 
 </p>
 Create an Admin and Normal User Account in AD
 In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”
-
+</p> 
+<img src="https://i.imgur.com/bKrpaFQ.png" height="80%" width="80%" alt="Create User"/>
+Create user, Jane_Admin
+Login to DC-1 as jane_admin
