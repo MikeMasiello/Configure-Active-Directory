@@ -33,7 +33,7 @@ This walkthrough outlines the implementation of on-premises Active Directory wit
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/5GZ2did.png" height="80%" width="80%" alt="Intall Windows Server Virtual Machine"/>
+<img src="https://i.imgur.com/5GZ2did.png" height="50%" width="50%" alt="Intall Windows Server Virtual Machine"/>
 </p>
 <p>
 <h1>Create the Domain Controller VM (Windows Server 2022) named “DC-1”
@@ -41,91 +41,91 @@ Take note of the Resource Group and Virtual Network (Vnet) that get created at t
 </p>
 <br />
 <p>
-<img src="https://i.imgur.com/pEatsVd.png" height="80%" width="80%" alt="Set Domain Controller NIC"/>
+<img src="https://i.imgur.com/pEatsVd.png" height="50%" width="50%" alt="Set Domain Controller NIC"/>
 </p>
 <p>Set Domain Controller’s NIC Private IP address to be static
 </p>
 <br />
-<img src="https://i.imgur.com/XUhBNe0.png" height="80%" width="80%" alt="Set Domain Controller NIC"/>
+<img src="https://i.imgur.com/XUhBNe0.png" height="50%" width="50%" alt="Set Domain Controller NIC"/>
 <p>
-<img src="https://i.imgur.com/w2DaBHa.png" height="80%" width="80%" alt="Diagram"/>
+<img src="https://i.imgur.com/w2DaBHa.png" height="50%" width="50%" alt="Diagram"/>
 </p>
 <p>
 <h1>Create the Client VM (Windows 10) named “Client-1”. Use the same Resource Group and Vnet that was created in Step 1.a 
 Ensure that both VMs are in the same Vnet (you can check the topology with Network Watcher
 </p>
 <br />
-<img src="https://i.imgur.com/JRwMqHb.png" height="80%" width="80%" alt="Ping Domain Controller"/>
+<img src="https://i.imgur.com/JRwMqHb.png" height="50%" width="50%" alt="Ping Domain Controller"/>
 <h1>Ensure Connectivity between the client and Domain Controller
 Login to Client-1 with Remote Desktop and ping DC-1’s private IP address with ping -t <ip address> (perpetual ping)
 </p>
 <br />
-<img src="https://i.imgur.com/4tanhzu.png" height="80%" width="80%" alt="Enable ICMPv4"/>
+<img src="https://i.imgur.com/4tanhzu.png" height="50%" width="50%" alt="Enable ICMPv4"/>
 </p>
 <br />
 <h1>Login to the Domain Controller and enable ICMPv4 in on the local windows Firewall
 Check back at Client-1 to see the ping succeed
 </p>
 <br />
-<img src="https://i.imgur.com/8OU2aab.png" height="80%" width="80%" alt="Install AD Domain Services"/>
+<img src="https://i.imgur.com/8OU2aab.png" height="50%" width="50%" alt="Install AD Domain Services"/>
 <h1>Install Active Directory
 Login to DC-1 and install Active Directory Domain Services
 </p>
 <br />
-<img src="https://i.imgur.com/Bzf7MHy.png" height="80%" width="80%" alt="Configure Domain Controller"/>
+<img src="https://i.imgur.com/Bzf7MHy.png" height="50%" width="50%" alt="Configure Domain Controller"/>
 <h1>Configure domain controller
 Promote as a DC: Setup a new forest as mydomain.com (can be anything, just remember what it is)
 Restart and then log back into DC-1 as user: mydomain.com\labuser (important to use the fully qualified domain name)
 </p>
 <br />
-<img src="https://i.imgur.com/qVemn3m.png" height="80%" width="80%" alt="Create an Admin and User Account in AD"/>
-<img src="https://i.imgur.com/faUm5ZC.png" height="80%" width="80%" alt="Create organizational unit"/>
+<img src="https://i.imgur.com/qVemn3m.png" height="50%" width="50%" alt="Create an Admin and User Account in AD"/>
+<img src="https://i.imgur.com/faUm5ZC.png" height="50%" width="50%" alt="Create organizational unit"/>
 </p>
 Create an Admin and Normal User Account in AD
 In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”
 </p> 
-<img src="https://i.imgur.com/bKrpaFQ.png" height="80%" width="80%" alt="Create User"/>
+<img src="https://i.imgur.com/bKrpaFQ.png" height="50%" width="50%" alt="Create User"/>
 
 Create user, Jane_Admin
 </p> 
-<img src="https://i.imgur.com/IET78Do.png" height="80%" width="80%" alt="Add User to Group"/>
+<img src="https://i.imgur.com/IET78Do.png" height="50%" width="50%" alt="Add User to Group"/>
 
 Add user Jane_Admin to ADIMINS user group
 </p>
 Login to DC-1 as jane_admin
 </p>
-<img src="https://i.imgur.com/LgaoPEM.png" height="80%" width="80%" alt="Join Client-1 to domain"/>
+<img src="https://i.imgur.com/LgaoPEM.png" height="50%" width="50%" alt="Join Client-1 to domain"/>
 
 Join Client-1 to your domain (mydomain.com)
-<img src="https://i.imgur.com/4RAwMbg.png" height="80%" width="80%" alt="Set Client DNS to private IP"/>
+<img src="https://i.imgur.com/4RAwMbg.png" height="50%" width="50%" alt="Set Client DNS to private IP"/>
  </p>
 From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address
 </p>
 From the Azure Portal, restart Client-1
 Login to Client-1 (Remote Desktop) as the original local admin (labuser) and join it to the domain (computer will restart)
 </p> 
-<img src="https://i.imgur.com/XiO7kXc.png" height="80%" width="80%" alt="join Client-1 to domain"/>
+<img src="https://i.imgur.com/XiO7kXc.png" height="50%" width="50%" alt="join Client-1 to domain"/>
 </p> 
 From the Azure Portal, restart Client-1
 Login to Client-1 (Remote Desktop) as the original local admin (labuser) and join it to the domain (computer will restart)
-<img src="https://i.imgur.com/p5723Ei.png" height="80%" width="80%" alt="Enable domain users to use RDP"/>
+<img src="https://i.imgur.com/p5723Ei.png" height="50%" width="50%" alt="Enable domain users to use RDP"/>
 </p> 
 Enable domain users to use remote desktop
 </p> 
-<img src="https://i.imgur.com/Hz3rpDj.png" height="80%" width="80%" alt="Verify Client-1 shows up in AD Users and Computers"/>
+<img src="https://i.imgur.com/Hz3rpDj.png" height="50%" width="50%" alt="Verify Client-1 shows up in AD Users and Computers"/>
 
 Login to the Domain Controller (Remote Desktop) and verify Client-1 shows up in Active Directory Users and Computers (ADUC) inside the “Computers” container on the root of the domain
 </p> 
-<img src="https://i.imgur.com/6UKEUYG.png" height="80%" width="80%" alt="Create additional users"/>
+<img src="https://i.imgur.com/6UKEUYG.png" height="50%" width="50%" alt="Create additional users"/>
 </p> 
 Create a bunch of additional users and attempt to log into client-1 with one of the users
 Login to DC-1 as jane_admin
 Open PowerShell_ise as an administrator
 Create a new File and paste the contents of the script into it (https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1)
-<img src="https://i.imgur.com/z19cEag.png" height="80%" width="80%" alt="Observe additional users"/>
+<img src="https://i.imgur.com/z19cEag.png" height="50%" width="50%" alt="Observe additional users"/>
 </p> 
 Run the script and observe the accounts being created
-<img src="https://i.imgur.com/bvXvtLq.png" height="80%" width="80%" alt="log into client-1 with new user created"/>
+<img src="https://i.imgur.com/bvXvtLq.png" height="50%" width="50%" alt="log into client-1 with new user created"/>
 </p> 
 Log into Client-1 with one of the accounts (take note of the password in the script)
 </p>
