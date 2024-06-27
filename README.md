@@ -58,7 +58,7 @@ Ensure that both VMs are in the same Vnet (you can check the topology with Netwo
 <p>
 </p>
 <br /><img src="https://i.imgur.com/XUhBNe0.png" height="50%" width="50%" alt="Set Domain Controller NIC"/>
-Ensure Connectivity between the client and Domain Controller
+2.) Ensure Connectivity between the client and Domain Controller
 Login to Client-1 with Remote Desktop and ping DC-1’s private IP address with ping -t <ip address> (perpetual ping)
 <p>
 <img src="https://i.imgur.com/JRwMqHb.png" height="50%" width="50%" alt="Ping Domain Controller"/>
@@ -70,7 +70,7 @@ Check back at Client-1 to see the ping succeed
 <img src="https://i.imgur.com/4tanhzu.png" height="50%" width="50%" alt="Enable ICMPv4"/>
 </p>
 <br />
-Install Active Directory
+3.) Install Active Directory
 Login to DC-1 and install Active Directory Domain Services
 </p>
 <img src="https://i.imgur.com/8OU2aab.png" height="50%" width="50%" alt="Install AD Domain Services"/>
@@ -84,7 +84,7 @@ Restart and then log back into DC-1 as user: mydomain.com\labuser (important to 
 <img src="https://i.imgur.com/Bzf7MHy.png" height="50%" width="50%" alt="Configure Domain Controller"/>
 
 </p>
-Create an Admin and Normal User Account in AD
+4.) Create an Admin and Normal User Account in AD
 In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”
 <img src="https://i.imgur.com/qVemn3m.png" height="50%" width="50%" alt="Create an Admin and User Account in AD"/>
 <img src="https://i.imgur.com/faUm5ZC.png" height="50%" width="50%" alt="Create organizational unit"/>
@@ -103,7 +103,8 @@ Login to DC-1 as jane_admin
 </p>
 <img src="https://i.imgur.com/LgaoPEM.png" height="50%" width="50%" alt="Join Client-1 to domain"/>
 
-Join Client-1 to your domain (mydomain.com)
+5.) Join Client-1 to your domain (mydomain.com)
+
 <img src="https://i.imgur.com/4RAwMbg.png" height="50%" width="50%" alt="Set Client DNS to private IP"/>
  </p>
 From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address
@@ -114,7 +115,7 @@ Login to Client-1 (Remote Desktop) as the original local admin (labuser) and joi
 <img src="https://i.imgur.com/XiO7kXc.png" height="50%" width="50%" alt="join Client-1 to domain"/>
 </p> 
 From the Azure Portal, restart Client-1
-Login to Client-1 (Remote Desktop) as the original local admin (labuser) and join it to the domain (computer will restart)
+6.) Login to Client-1 (Remote Desktop) as the original local admin (labuser) and join it to the domain (computer will restart)
 <img src="https://i.imgur.com/p5723Ei.png" height="50%" width="50%" alt="Enable domain users to use RDP"/>
 </p> 
 Enable domain users to use remote desktop
@@ -125,7 +126,7 @@ Login to the Domain Controller (Remote Desktop) and verify Client-1 shows up in 
 </p> 
 <img src="https://i.imgur.com/6UKEUYG.png" height="50%" width="50%" alt="Create additional users"/>
 </p> 
-Create a bunch of additional users and attempt to log into client-1 with one of the users
+7.) Create a bunch of additional users and attempt to log into client-1 with one of the users
 Login to DC-1 as jane_admin
 Open PowerShell_ise as an administrator
 Create a new File and paste the contents of the script into it (https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1)
