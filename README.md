@@ -62,36 +62,38 @@ Ensure Connectivity between the client and Domain Controller
 Login to Client-1 with Remote Desktop and ping DC-1’s private IP address with ping -t <ip address> (perpetual ping)
 <p>
 <img src="https://i.imgur.com/JRwMqHb.png" height="50%" width="50%" alt="Ping Domain Controller"/>
-
+ 
+Login to the Domain Controller and enable ICMPv4 in on the local windows Firewall
+Check back at Client-1 to see the ping succeed
 </p>
 <br />
 <img src="https://i.imgur.com/4tanhzu.png" height="50%" width="50%" alt="Enable ICMPv4"/>
 </p>
 <br />
-<h1>Login to the Domain Controller and enable ICMPv4 in on the local windows Firewall
-Check back at Client-1 to see the ping succeed
-</p>
-<br />
-<img src="https://i.imgur.com/8OU2aab.png" height="50%" width="50%" alt="Install AD Domain Services"/>
-<h1>Install Active Directory
+Install Active Directory
 Login to DC-1 and install Active Directory Domain Services
 </p>
+<img src="https://i.imgur.com/8OU2aab.png" height="50%" width="50%" alt="Install AD Domain Services"/>
+
+</p>
 <br />
-<img src="https://i.imgur.com/Bzf7MHy.png" height="50%" width="50%" alt="Configure Domain Controller"/>
-<h1>Configure domain controller
+Configure domain controller
 Promote as a DC: Setup a new forest as mydomain.com (can be anything, just remember what it is)
 Restart and then log back into DC-1 as user: mydomain.com\labuser (important to use the fully qualified domain name)
 </p>
-<br />
-<img src="https://i.imgur.com/qVemn3m.png" height="50%" width="50%" alt="Create an Admin and User Account in AD"/>
-<img src="https://i.imgur.com/faUm5ZC.png" height="50%" width="50%" alt="Create organizational unit"/>
+<img src="https://i.imgur.com/Bzf7MHy.png" height="50%" width="50%" alt="Configure Domain Controller"/>
+
 </p>
 Create an Admin and Normal User Account in AD
 In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”
+<img src="https://i.imgur.com/qVemn3m.png" height="50%" width="50%" alt="Create an Admin and User Account in AD"/>
+<img src="https://i.imgur.com/faUm5ZC.png" height="50%" width="50%" alt="Create organizational unit"/>
+</p>
+Create user, Jane_Admin
 </p> 
 <img src="https://i.imgur.com/bKrpaFQ.png" height="50%" width="50%" alt="Create User"/>
 
-Create user, Jane_Admin
+
 </p> 
 <img src="https://i.imgur.com/IET78Do.png" height="50%" width="50%" alt="Add User to Group"/>
 
