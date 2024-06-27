@@ -33,18 +33,21 @@ This walkthrough outlines the implementation of on-premises Active Directory wit
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/5GZ2did.png" height="50%" width="50%" alt="Intall Windows Server Virtual Machine"/>
+
 </p>
 <p>
-<h1>Create the Domain Controller VM (Windows Server 2022) named “DC-1”
-Take note of the Resource Group and Virtual Network (Vnet) that get created at this time
-</p>
+ 1.) Setup Resources in Azure
+Create the Domain Controller VM (Windows Server 2022) named “DC-1”
+Take note of the Resource Group and Virtual Network (Vnet) that get created at this time.
+ <p>
+<img src="https://i.imgur.com/5GZ2did.png" height="50%" width="50%" alt="Intall Windows Server Virtual Machine"/>
 <br />
+<p>
+Set Domain Controller’s NIC Private IP address to be static. 
 <p>
 <img src="https://i.imgur.com/pEatsVd.png" height="50%" width="50%" alt="Set Domain Controller NIC"/>
 </p>
-<p>Set Domain Controller’s NIC Private IP address to be static
-</p>
+
 <br />
 <img src="https://i.imgur.com/XUhBNe0.png" height="50%" width="50%" alt="Set Domain Controller NIC"/>
 <p>
