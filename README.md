@@ -115,6 +115,7 @@ Login to Client-1 (Remote Desktop) as the original local admin (labuser) and joi
 <img src="https://i.imgur.com/XiO7kXc.png" height="50%" width="50%" alt="join Client-1 to domain"/>
 </p> 
 From the Azure Portal, restart Client-1
+</p> 
 6.) Login to Client-1 (Remote Desktop) as the original local admin (labuser) and join it to the domain (computer will restart)
 <img src="https://i.imgur.com/p5723Ei.png" height="50%" width="50%" alt="Enable domain users to use RDP"/>
 </p> 
