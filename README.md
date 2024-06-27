@@ -36,14 +36,15 @@ This walkthrough outlines the implementation of on-premises Active Directory wit
 
 </p>
 <p>
- 1.) Setup Resources in Azure
+1.) Setup Resources in Azure
 Create the Domain Controller VM (Windows Server 2022) named “DC-1”
 Take note of the Resource Group and Virtual Network (Vnet) that get created at this time.
- <p>
+<p>
 <img src="https://i.imgur.com/5GZ2did.png" height="50%" width="50%" alt="Intall Windows Server Virtual Machine"/>
-<br />
+
 <p>
 Set Domain Controller’s NIC Private IP address to be static. 
+ 
 <p>
 <img src="https://i.imgur.com/pEatsVd.png" height="50%" width="50%" alt="Set Domain Controller NIC"/>
 </p>
@@ -59,7 +60,7 @@ Ensure that both VMs are in the same Vnet (you can check the topology with Netwo
 <br /><img src="https://i.imgur.com/XUhBNe0.png" height="50%" width="50%" alt="Set Domain Controller NIC"/>
 Ensure Connectivity between the client and Domain Controller
 Login to Client-1 with Remote Desktop and ping DC-1’s private IP address with ping -t <ip address> (perpetual ping)
- <p>
+<p>
 <img src="https://i.imgur.com/JRwMqHb.png" height="50%" width="50%" alt="Ping Domain Controller"/>
 
 </p>
