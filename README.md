@@ -137,5 +137,7 @@ Run the script and observe the accounts being created.
 <img src="https://i.imgur.com/bvXvtLq.png" height="50%" width="50%" alt="log into client-1 with new user created"/>
 </p> 
 Log into Client-1 with one of the accounts (take note of the password in the script).
+
 </p>
+
 Finished!!
